@@ -1,0 +1,13 @@
+framework:
+  test: true
+  router:
+    utf8: true
+    resource: "%kernel.project_dir%/config/routing.yaml"
+
+dwh_query:
+  schemas_dir: '%kernel.project_dir%/config/dwh_query'
+
+services:
+  Wata\DwhQueryBundle\Tests\Integration\App\Resolver\TestQueryResolver:
+    tags: [ 'dwh_query.query_resolver' ]
+

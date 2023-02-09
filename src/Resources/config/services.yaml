@@ -1,0 +1,29 @@
+services:
+  _defaults:
+    public: true
+
+  Wata\DwhQueryBundle\Schema\ManualSchemaBuilder:
+    arguments:
+      - '%dwh_query.schema_config%'
+
+  Wata\DwhQueryBundle\Resolver\FieldResolver: ~
+  Wata\DwhQueryBundle\Resolver\ResolverExecutor:
+    arguments:
+      - !tagged_iterator dwh_query.pre_interceptor
+      - !tagged_iterator dwh_query.transformer
+
+  Wata\DwhQueryBundle\Resolver\ResolverMapBuilder:
+    arguments:
+      - '@Wata\DwhQueryBundle\Resolver\ResolverExecutor'
+
+  dwh_query.executor:
+    class: Wata\DwhQueryBundle\Executor\Executor
+    arguments:
+      - '@dwh_query.schema_builder'
+      - '@Wata\DwhQueryBundle\Resolver\ResolverMapBuilder'
+      - '@dwh_query.default_field_resolver'
+
+  Wata\DwhQueryBundle\Controller\DwhApiController:
+    public: true
+    arguments:
+      - '@dwh_query.executor'

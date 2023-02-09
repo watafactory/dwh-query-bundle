@@ -1,0 +1,2 @@
+dwh:
+  resource: "@DwhQueryBundle/Resources/config/routes.yaml"

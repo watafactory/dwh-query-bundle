@@ -1,0 +1,6 @@
+dwh_api_endpoint:
+  path: /dwh
+  defaults:
+    _controller: Wata\DwhQueryBundle\Controller\DwhApiController
+    _format: "json"
+  methods: POST
