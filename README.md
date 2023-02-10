@@ -5,7 +5,6 @@
 The DWH uses GraphQL specification to retrieve the data. It uses the package <a href="https://github.com/webonyx/graphql-php" target="_blank">webonyx/graphql-php</a>: a PHP implementation of the GraphQL specification based on the reference implementation in JavaScript to use GraphQL in PHP.
 
 If you want to learn about GraphQL you can read the docs from the official website <a href="https://graphql.org/learn/" target="_blank">Introduction to GraphQL</a> or the documentation of the PHP package.
-This project is the API for the Health Tool project
 
 # Installation
 
