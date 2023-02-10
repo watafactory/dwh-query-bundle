@@ -20,7 +20,7 @@ In case you want to extend the library, you can set up a local installation usin
 
 Run `docker-compose up -d` to run app. By default, the `docker-compose.yml` is used.
 
-Run `docker-compose exec php composer install` to install the vendors.
+Run `docker-compose exec apache-php composer install` to install the vendors.
 
 This docker-compose file is used for development. It starts the following container:
 
