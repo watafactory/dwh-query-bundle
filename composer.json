@@ -11,16 +11,6 @@
     }
   ],
   "minimum-stability": "dev"
-  "autoload": {
-    "psr-4": {
-      "Wata\\DwhQueryBundle\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Wata\\DwhQueryBundle\\Tests\\": "tests/"
-    }
-  },
   "require": {
     "php": ">=7.4",
     "symfony/config": "^5.4",
