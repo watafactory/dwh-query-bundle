@@ -10,7 +10,7 @@
       "email": "development@wata.es"
     }
   ],
-  "minimum-stability": "dev"
+  "minimum-stability": "dev",
   "require": {
     "php": ">=7.4",
     "symfony/config": "^5.4",
