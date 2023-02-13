@@ -11,7 +11,7 @@ If you want to learn about GraphQL you can read the docs from the official websi
 Via composer:
 
 ```sh
-composer require developmentwata/dwh-query-bundle
+composer require watafactory/dwh-query-bundle
 ```
 
 # Development

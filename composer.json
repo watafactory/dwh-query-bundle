@@ -1,5 +1,5 @@
 {
-  "name": "wata/dwh-query-bundle",
+  "name": "watafactory/dwh-query-bundle",
   "type": "symfony-bundle",
   "description": "The DWH uses GraphQL specification to retrieve the data",
   "type": "library",
