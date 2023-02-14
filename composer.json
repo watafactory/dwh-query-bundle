@@ -2,7 +2,6 @@
   "name": "watafactory/dwh-query-bundle",
   "type": "symfony-bundle",
   "description": "The DWH uses GraphQL specification to retrieve the data",
-  "type": "library",
   "license": "GPL-3.0-or-later",
   "authors": [
     {
